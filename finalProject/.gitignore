@@ -1,0 +1,7 @@
+.env
+
+# ignore folder
+node_modules
+uploads
+models 
+
