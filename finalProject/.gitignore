@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# ignore components folder which is inside of src
+/src/components/*
+/src/redux/
