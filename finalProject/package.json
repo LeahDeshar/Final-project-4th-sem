@@ -1,29 +1,47 @@
 {
-  "name": "defence",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm start --prefix ./frontend",
-    "server": "nodemon index.js",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "bcryptjs": "^2.4.3",
-    "concurrently": "^8.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.2.1",
-    "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "nodemon": "^2.0.22",
-    "validator": "^13.9.0"
+    "@react-google-maps/api": "^2.18.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-autosuggest": "^10.1.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
