@@ -1,0 +1,421 @@
+.inner__view-container
+{
+    background-color: #000212;
+    padding: 40px 0;
+}
+.light .inner__view-container
+{
+  background-color: #ffffff;
+
+}
+.inner__view-container-cus
+{
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.inner__view-container-cus .viewprofile__container
+{
+  margin: auto!important;
+ }
+
+.viewprofile__container {
+    /* max-width: 800px; */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+
+   /* border: 2px solid whitesmoke; */
+
+  }
+  .inner__view-container-cus .header 
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .inner__view-container-cus .header .header__title
+  {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  } 
+  .inner__view-container-cus .header .header__arrow
+  {
+   display: none;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header__arrow {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .light .header h3
+  {
+    color: black;
+  }
+  .light .editIcon
+  {
+    fill: black;
+  }
+  .header__title.mainprofile {
+    margin: 0 0 20px 10px;
+    font-size: 20px;
+  }
+  .inner__view-container-cus .viewprofile__content
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .viewprofile__content {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 3em;
+    /* display: flex; */
+    color: black;
+
+  }
+  
+  .viewprofile__left {
+    padding-right: 20px;
+  }
+  
+  .viewprofile__right {
+    display: grid;
+    /* border: 2px solid white; */
+    grid-template-columns: 70% 20%;
+    /* padding-left: 20px; */
+    /* border: 2px solid white; */
+    width: 90%;
+  }
+  .light .viewprofile__card 
+  {
+    box-shadow: inset 0px 4px 30px #8990c5;
+    background-color: #071685;
+
+  }
+  .viewprofile__card {
+    
+    /* margin: 0 20px; */
+
+    background-color: #0F132D;
+    box-shadow: inset 0px 4px 30px #000B65;
+    padding: 25px 20px 20px;
+    width: 400px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+
+  }
+  .viewprofile__card:nth-child(2)
+  {
+    width: 190px;
+
+  }
+  .viewprofile__card >h3,p
+  {
+    color: white!important;
+  }
+  
+  .viewprofile__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .viewprofile__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .viewprofile__info
+  {
+    padding-top: 20px;
+  }
+  .viewprofile__info p {
+    font-size: 18px;
+    margin: 8px auto;
+    color: black;
+    width: 85%;
+
+  }
+  
+  /* .viewprofile__info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+
+  } */
+  
+  .viewprofile__right h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+
+  }
+  
+  .viewprofile__right p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+
+  }
+  
+  .viewprofile__left {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+   
+    margin: 0 10px;
+
+  }
+  .remove-skillset-button
+  {
+    background-color: transparent!important;
+  }
+  .editSkillset
+  {
+    background-color: #00020e;
+    box-shadow: inset 0px 4px 30px #000B65;
+    border-radius: 5px;
+    padding: 10px 0 10px 20px;
+  }
+  .editSkillset option
+  {
+    padding: 20px 0!important;
+    /* color: black!important; */
+  } 
+
+  .viewprofile__left .image-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 40px auto 0;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+  }
+
+  .viewprofile__left .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .activity__container
+  {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    
+  }
+  .activity__container > div 
+  {
+    background: #000635;
+    width: 350px;
+    height: 300px;
+
+  }
+  .viewprofile__activity h3 
+  {
+    margin: 80px 0 30px 0;
+  }
+  .profile__edit img 
+  {
+    width: 100%;
+  }
+  .profile-close
+  {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  /* modal */
+  /* Modal styles */
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #000635;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.modal input {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #000635;
+  border-radius: 4px;
+}
+
+.modal button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* Additional styling for the ViewProfile component */
+
+/* Your existing CSS classes */
+.viewprofile__container {
+  /* ... */
+}
+
+/* Styles for the "Edit" button */
+.viewprofile__edit-button {
+  margin-bottom: 10px;
+}
+
+/* Styles for the profile info section */
+.viewprofile__info p {
+  margin: 5px 0;
+}
+
+/* Styles for the modal trigger */
+.viewprofile__edit-button {
+  margin-bottom: 10px;
+}
+
+.light .mainProfileTheme .viewprofile__info > p ,
+.light .viewprofile__activity h3
+{
+  color: black!important;
+}
+
+.viewprofile__activity h3
+{
+  font-size: 2em;
+}
+.viewprofile__activity .star {
+  color: #888;
+}
+
+.viewprofile__activity .star.filled {
+  color: rgb(254, 162, 2);
+}
+
+.light .testimonial__content
+{
+  background-color: rgba(0, 42, 119, 0.227);
+
+}
+.light .testimonial__content p
+{
+  color: black!important;
+
+}
+.testimonial__content
+{
+  /* border: 1px solid whitesmoke; */
+  background-color: rgba(240, 248, 255, 0.182);
+  width: 60%;
+  margin: 20px 0;
+  border-radius: 25px;
+  display: flex;
+  gap: 1em;
+  padding: 20px 0 20px 30px;
+}
+.testimonial__content img
+{
+  /* border: 1px solid red; */
+height: 80px;
+width: 80px;
+object-fit: cover;
+border-radius: 50%;
+object-position: top;
+}
+
+.name-container
+{
+  background-color: #18950a;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.light .name-container p 
+{
+  color: whitesmoke!important;
+}
+.name-container p 
+{
+  text-align: center;
+  font-size: 3.5em;
+}
+.testMessage
+{
+  color: #5d5d5d!important;
+  font-style: italic;
+}
+.editSkillset
+{
+  width: 70%;
+  padding: 15px 10px;
+  position: relative;
+  left: 15%;
+  border: none;
+  outline: none;
+}
+.prorow  
+{
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+.selectedSkill
+{
+  position: relative;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+.skill__container
+{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* position: relative;   */
+}
+.skill__container span
+{
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 10px;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+.skill__container .remove-skillset-button 
+{
+opacity: 0;
+}

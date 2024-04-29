@@ -1,0 +1,142 @@
+.workpage
+{
+    width: 90%;
+    margin: auto;
+    height: 185vh;
+    background-color: #000212;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+.light .workpage
+{
+    background: transparent;
+}
+.workpage__header
+{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.light .top_rect
+{
+  width: 70%;
+  background: #032e839c;
+  filter: blur(130px);
+  top: -390px;
+  left: 0px;
+
+}
+.top_rect
+{
+    position: absolute;
+    width: 100%;
+    height: 455px;
+    left: 158px;
+    top: -350px;
+    opacity: 0.8;
+    background: #03102A;
+    filter: blur(130px);
+}
+.light .workpage__title h2,
+.light .workpage__title h3
+{
+  color: #000212;
+}
+.workpage__title
+{
+    padding-top: 5%;
+    text-align: center;
+    color: white;
+
+}
+.workpage__body
+{
+    /* border: 1px solid white; */
+    width: 95%;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.workpage__title h2
+{
+    
+    position: relative;
+    z-index: 1;
+}
+.workpage__body h2 
+{
+    margin: 50px 0 30px 0;
+}
+.workpage__title h3
+{
+    
+    width: 50%;
+    margin: auto;
+}
+.workpage__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5em;
+  }
+  .light .workpage__item
+  {
+    background-color: #7B8AFF;
+    box-shadow: inset 0px 4px 30px #000B65;
+  }
+  .workpage__item {
+    background-color: #000212;
+    box-shadow: inset 0px 4px 30px #000B65;
+    padding: 25px 20px 20px;
+    width: 200px;
+    height: 250px;
+    border-radius: 40px;
+  }
+  .workpage__item  h4
+  {
+    margin: 10px 0;
+  }
+  .item__image
+  {
+    width: 100%;
+    height: 80%;
+    
+  }
+  .item__image img 
+  {
+    border-top-right-radius: 40px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    /* border-radius: 25%; */
+  }
+  .workpage__item:nth-child(4) img 
+  {
+    object-position: center;
+
+  }
+  .workpage__footer
+  {
+    position: absolute;
+    /* overflow: hidden; */
+    height: 15vh;
+    /* border: 1px solid white; */
+    margin-top: 30px;
+  }
+
+  .bottom_rect
+{
+    position: absolute;
+    width: 100%;
+    height: 455px;
+    left: 128px;
+    bottom: -490px;
+    opacity: 0.8;
+    background: #092b70;
+    filter: blur(120px);
+}

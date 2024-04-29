@@ -1,0 +1,230 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+.navbar__container
+{
+    background-color: #f2f2f2;
+    padding: 19px 10px;
+    background: #000212;
+    box-shadow: 0px 5px 10px rgba(14, 30, 157, 0.31);
+    
+     position: sticky;
+     z-index: 1000;
+     top: 0;
+    /* box-shadow: 0px 5px 10px rgba(167, 171, 206, 0.815); */
+
+
+}
+
+.light .navbar__container
+{
+  box-shadow: 0px 2px 12px rgba(14, 31, 157, 0.719);
+
+}
+.light 
+{
+  background: #ffffff;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 45% 1fr;
+  width: 85%;
+  place-items: center;
+  margin: auto;
+  /* border: 2px solid whitesmoke; */
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.navbar__logo {
+  width: 90px;
+  height: 50px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+
+.navbar__center {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__item {
+    margin-right: 20px;
+    background: linear-gradient(262.91deg, #0E1E9D 32.37%, rgba(255, 255, 255, 0.68) 91.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+.light .navbar__item,.light .login
+{
+  background: linear-gradient(262.91deg, #0E1E9D 32.37%, rgb(0, 0, 0) 91.16%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar__item:last-child {
+  margin-right: 0;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* border: 2px solid whitesmoke; */
+  justify-content: space-around;
+}
+.navbar__right > *
+{
+  margin-inline: 10px;
+  /* border: 2px solid whitesmoke; */
+
+}
+.navbar__link {
+  text-decoration: none;
+ 
+  margin-right: 10px;
+}
+
+ .login
+{
+    background: linear-gradient(262.91deg, #0E1E9D 32.37%, rgba(255, 255, 255, 0.68) 91.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 1px;
+
+}
+.light .login::before
+{
+  content: '';
+  height: 1px;
+  width: 13%;
+  position: absolute;
+  left: -25%;
+  bottom: 13px;
+  transform: rotate(90deg);
+  background: linear-gradient(262.50deg, #3349f6 32.37%, rgba(6, 0, 0, 0.793) 51.16%);
+}
+.login::before
+{
+    content: '';
+    height: 1px;
+    width: 13%;
+    position: absolute;
+    left: -25%;
+    bottom: 13px;
+    transform: rotate(90deg);
+    background: linear-gradient(262.50deg, #5162e3 32.37%, rgba(255, 255, 255, 0.68) 51.16%);
+}
+
+.navbar__button {
+    background: linear-gradient(264.22deg, #3267FF 8.12%, #1BB3FF 102.94%);
+    border-radius: 40.5px;
+    color: #fff;
+    border: none;
+    padding: 8px 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.notiMessage  
+{
+  font-size: 18px;
+}
+.light .notiMessage  
+{
+  stroke: #0606fe; /* Set the desired stroke color */
+  fill: #000000;
+}
+.light .welcome
+{
+  color: black;
+}
+.noti__count
+{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #010f7c;
+  color: #fff;
+  position: absolute;
+  top: 8%;
+  right: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.person__btn
+{
+ /* width: 100px;
+ height: 100px; */
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ overflow: hidden;
+ margin-bottom: 10px;
+}
+.person__btn img 
+{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.light .dropdown__menu
+{
+  background-color: #2a2a2a5b;
+}
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff5b;
+  border-radius: 4px;
+  backdrop-filter: blur(16px);
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.dropdown__item {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown__item:hover {
+  background-color: #f2f2f285;
+}

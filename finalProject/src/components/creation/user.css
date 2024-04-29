@@ -1,0 +1,140 @@
+
+.user 
+{
+    background-color: #000212;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+
+}
+.userTypeError
+{
+    text-align: center;
+    color: red!important;
+}
+.light .user
+{
+    background-color: #ffffff;
+
+} 
+.light .user .loginLink
+{
+    color: blue!important;
+}
+.light .user .loginLink:hover
+{
+    text-decoration: underline;
+}
+
+
+.user h3 
+{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 3%;
+}
+.user__choice
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 5% auto;
+}
+.light .label-container
+{
+    background-color: #011281;
+    box-shadow: inset 0px 4px 30px #6472db;
+}
+.light .error
+{
+    color: red!important;
+    text-align: center;
+}
+.light .user h3,
+.light .user__footer small
+{
+    color: black!important;
+}
+.label-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 20px;
+
+
+    background-color: #0F132D;
+    box-shadow: inset 0px 4px 30px #000B65;
+    padding: 25px 20px 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+    position: relative;
+}
+
+/* .option
+{   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 400px;
+    position: relative;
+  } */
+.label-container input
+{ display: none;}
+.option label 
+{font-size: 40px;}
+.label-container label::after 
+{
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3b47a4;
+    border-radius: 50%;
+}
+.label-container label::before 
+{
+    content: "";
+    position: absolute;
+    top: 28%;
+    right: 18%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+  transition: opacity 0.4s;
+}
+.label-container input:checked ~ label::before 
+{
+    opacity: 1;
+}
+
+.user__footer
+{
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid white; */
+    text-align: center;
+}
+.user__footer .navbar__button
+{
+    width: 50%;
+    margin: 2% 0;
+}
+.user__footer small
+{
+    display: block;
+
+}

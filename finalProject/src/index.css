@@ -1,0 +1,66 @@
+.mainPage
+{
+    background-color: #000212;
+}
+.light .mainPage
+{
+    background-color: #ffffff;
+
+}
+h2
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 88px;
+    letter-spacing: 0.22em;
+    text-align: center;
+
+    background: linear-gradient(262.91deg, #0E1E9D 30.37%, rgba(255, 255, 255, 0.68) 85.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.light h2,.light .start
+{
+    background: linear-gradient(262.91deg, #0E1E9D 30.37%, rgba(0, 0, 0, 0.789) 85.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.start
+{
+    font-weight: 200;
+    font-size: 32px;
+    text-align: start;
+    background: linear-gradient(262.91deg, #0E1E9D 80.37%, rgba(255, 255, 255, 0.68) 90.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h3
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.light h4
+{
+    color: black;
+}
+h4{
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    /* line-height: 28px; */
+    color: white;
+    /* text-align: center; */
+}

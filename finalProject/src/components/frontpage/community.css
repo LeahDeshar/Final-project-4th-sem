@@ -1,0 +1,70 @@
+.community
+{
+    width: 90%;
+    margin: 5% auto 0;
+    height: 100vh;
+    /* border: 1px solid white; */
+    background-color: #000212;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid white; */
+}
+.light .community
+{
+    background-color: transparent;
+} 
+.community__body
+{
+    position: relative;
+    z-index: 1;
+    
+}
+.community__body h2 
+{
+    line-height: 1.4;
+    margin-top: 9%;
+}
+.btn__community
+{
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+    padding: 0;
+    margin: 4% auto;
+}
+.btn__community .navbar__button
+{
+    margin: 0;
+}
+.footer__logo
+{
+    display: flex;
+    justify-content: center;
+}
+.footer__logo img 
+{
+    width: 130px;
+    height: 59px;
+}
+.light .footer__note h3,
+.light .footer__note p
+{
+    color: #000212!important;
+}
+.footer__note
+{
+    color: whitesmoke;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.footer__note h3 
+{
+    font-size: 23px;
+    margin: 10px 0;
+}
+.footer__note p 
+{
+    font-size: 15px!important;
+}

@@ -1,0 +1,67 @@
+.notification
+{
+    background-color: #000212;
+    min-height: 130vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+}
+.light .notification
+{
+  background-color: #ffffff;
+
+}
+.notification__container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    width: 80%;
+    margin:  0 auto;
+  }
+  .notification__title
+  {
+    width: 35%;
+    position: relative;
+    left: 6%;
+    margin: 5% auto 4%;
+  }
+  .light .notification__container h5 
+  {
+    font-size: 25px;
+  }
+  .notification__title h4
+  {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+  .notification__container p 
+  {
+    padding: 10px 0;
+    border-bottom: 1px solid #374adc6d;
+    margin: 10px 0;
+  }
+  .light .notification__container p ,
+  .light .notification__container h5,
+  .light .about-page p ,
+  .light .about-page h3,
+  .light .about-page sup
+{
+  color: black!important;
+}
+.about__container
+{
+  min-height: 100vh;
+  padding-bottom: 15%;
+}
+.about-page 
+{
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.about-page p 
+{
+  text-align: justify;
+  margin: 20px 0;
+}

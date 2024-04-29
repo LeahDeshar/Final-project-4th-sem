@@ -1,0 +1,384 @@
+.service__container
+{
+  width: 100%;
+  min-height: 100vh;
+  /* height: 190vh; */
+  background-color: #000212;
+  position: relative;
+  overflow: hidden;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+.light .service__container
+{
+  background-color: transparent;
+}
+.service__container h4
+{
+  width: 80%;
+  margin: 9% auto 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: .9px;
+}
+.grid-container {
+  display: grid;
+  width: 80%;
+  margin: 5% auto 0;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 3em; /* Adjust the gap between grid items */
+  }
+  .light .grid-item 
+  {
+    box-shadow: inset 0px 4px 30px #263acb;
+    background-color: #020c53;
+
+  }
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    background-color: #0F132D;
+    box-shadow: inset 0px 4px 30px #000B65;
+    padding: 25px 20px 20px;
+    width: 200px;
+    height: 250px;
+    border-radius: 40px;
+    /* border: 1px solid white; */
+  }
+  
+  .grid-image {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .light .workinprogress
+  {
+    color: #000212;
+  }
+  .grid-name {
+    margin-top: 8%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  .service__container .bottom_rect
+  {
+    opacity: .5;
+  }
+  .service__header
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0E1E9D;
+  }
+  .light .servbttomhr
+  {
+    border-bottom: 1px solid #283cd3;
+
+  }
+  .servbttomhr
+  {
+    border-bottom: 1px solid #0E1E9D;
+    padding: 9px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.159);
+    backdrop-filter: blur(10px);
+    /* overflow: hidden; */
+    border: 1px solid black;
+  }
+  .modal.calenModal
+  {
+    background-color: transparent!important;
+    backdrop-filter: blur(0px)!important;
+
+  }
+  .light .serviceTheme.modal
+  {
+    background-color: rgba(0, 0, 0, 0.353);
+    backdrop-filter: blur(10px);
+  }
+  .light .modal-content
+  {
+    background-color: #ffffff;
+    border: none;
+  }
+  .light .modal-content p 
+  {
+    color: black!important;
+  }
+  .modal-content {
+    background-color: #000212;
+    border-radius: 55px;
+    border: 1px solid black;
+    width: 80%;
+    height: 70%;
+    box-sizing: border-box;
+    /* padding: 20px 100px; */
+    overflow: auto;
+    scrollbar-width: none;
+    position: relative;
+    
+  }
+  
+  .modal-content::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+
+.modal input,textarea,.calendartimepicker,.addressSelector
+{
+    box-shadow: inset 0px 4px 30px #000B65;
+    border-radius: 5px;
+    padding: 18px  0 18px 30px ;
+    /* width: 100%; */
+    margin: 20px 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.searchBar
+{
+  position: relative;
+}
+.searchIcon
+{
+  position: absolute;
+  left: 23px;
+  top: 8px;
+}
+.searchBar input 
+{
+  width: 600px;
+  box-shadow: inset 0px 4px 30px #000B65;
+  background-color: transparent;
+  border: none;
+    border-radius: 5px;
+    padding: 12px  0 12px 42px ;
+}
+.serviceNameTag
+{
+  padding-bottom: 5px;
+}
+.light .modal input,.light .modal textarea,.light .modal .calendartimepicker,.light .modal .addressSelector
+{
+ 
+  box-shadow: inset 0px 4px 30px #263acb;
+  background-color: #020c53;
+  color: white;
+}
+.light .modal-content label
+{
+  color: #000!important;
+}
+ .creation .modal-content input, .creation .modal-content button
+{
+  margin: 20px auto!important;
+}
+.bottom_rect
+{
+    position: absolute;
+    width: 100%;
+    height: 455px;
+    left: 128px;
+    bottom: -490px;
+    opacity: 0.8;
+    background: #092b70;
+    filter: blur(120px);
+}
+.closebtn
+{
+  position: absolute;
+  top: 7%;
+  right: 15%;
+  font-size: 20px;
+}
+.light .closebtn
+{
+  fill: #000000;
+
+}
+.modal-content button,.modal-content form input,.modal-content form label,.modal-content form textarea
+{
+  width: 70%!important;
+  display: block;
+  margin: auto!important;
+}
+/* .modal-content > * 
+{
+  border: 2px solid white;
+} */
+.modal-content form .navbar__button 
+{
+  width: 20%!important;
+ margin: 20px auto!important;
+ 
+}
+
+/* CALENDAR */
+.modal .calendarTheme .form-group
+{
+  margin: auto;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #03102A;
+  box-shadow: inset 0px 4px 30px #001299;
+  border-radius: 25px;
+}
+.calendar__container
+{
+  margin: 20px auto ;
+  width: 59%;
+  /* border: 2px solid rgb(0, 255, 21); */
+}
+.timeTheme label 
+{
+ margin-left: 20px;
+}
+.timeTheme
+{
+  margin: 20px auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px!important;
+  /* border: 2px solid rgb(255, 132, 0); */
+  background-color: #03102A;
+  box-shadow: inset 0px 4px 30px #001299;
+  border-radius: 25px;
+  width: 45%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.selectedDate 
+{
+  margin: 10px 0 30px 0;
+}
+
+.calenTheme td ,
+.calenTheme th,
+.calenTheme tr
+{
+  padding: 15px;
+  /* border: 2px solid rgb(0, 255, 21); */
+  text-align: center;
+
+}
+
+.calenTheme td:hover 
+{
+  background-color: #ffffff69;
+}
+.calendar__container button 
+{
+  width: 25px!important;
+
+}
+.calendar__container button ,.calendar__container select
+{
+  background-color: transparent;
+  border: none;
+  display: inline;
+}
+.timepicker
+{
+  padding: 10px 0;
+} 
+.timepicker select ,
+.calendar__container select
+{
+ background-color: rgba(255, 255, 255, 0.123);
+ box-shadow: inset 0px 1px 2px #00118e;
+ font-size: 15px;
+ border: none;
+ padding: 5px;
+}
+.timepicker option ,
+.calendar__container option
+
+{
+color: black;
+}
+.custom-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none !important;
+  padding-right: 40px;
+}
+.timepicker .selectTheme p,
+.timeTheme .selectTheme p,
+.selectedDate .selectTheme p
+{
+  margin: 20px 0;
+  color: white!important;
+}
+.optiondrop
+{
+  padding: 0 50px;
+  border: 1px solid black;
+}
+
+.service__detail__summary
+{
+  /* border: 1px solid red; */
+  width: 60%;
+  margin: auto;
+}
+.service__detail__summary p
+{
+  margin: 10px 0;
+  padding-left: 30px;
+  width: 90%;
+  text-align: left;
+}
+.modal .address .addressTheme
+{
+  width: 50%;
+  margin: auto;
+}
+.modal .address .addressTheme h2 
+{
+  font-size: 30px;
+}
+.selectedAddress
+{
+  margin: 20px 0 40px 0;
+}
+.errorPost
+{
+  text-align: center;
+  color: red!important;
+}
+.serInput 
+{
+  color: rgb(185, 185, 245)!important;
+}
